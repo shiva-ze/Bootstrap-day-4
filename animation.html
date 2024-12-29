@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Animation</title>
+    <style>
+       .color-changing-animation{
+         width: 100px;
+         height: 100px;
+         background-color: red;
+         animation-name: change-color;
+         animation-duration: 3s;
+       
+         }
+
+
+
+    .logo{
+    color: red;
+    animation-name: bounce;
+    animation-duration: 0.6s;
+    animation-iteration-count: 3;}
+
+.multiple-color-changing-animation{
+    width: 100px;
+         height: 100px;
+         position: relative;
+         background-color: pink;
+         animation-name: multiple-color;
+         animation-duration: 50s;
+}
+
+
+ @keyframes change-color{
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: green;
+    }
+
+ }
+
+@keyframes multiple-color{
+    0%{background-color: pink; left: 100px; top: 100px; }
+    25%{background-color: brown; bottom: 200px; top: 0px;}
+    50%{background-color: aqua; left: 200px; bottom: 500px;}
+    75%{background-color: azure; right: 0px; top: 200px; left: 200px;}
+    100%{background-color: lightskyblue; left: 0px;top: 300px; bottom: 100px;}
+}
+
+ 
+   
+
+
+   @keyframes bounce{
+    0%{ transform: translateY(0px);}
+    50%{ transform: translateY(20px); }
+    100%{transform: translateY(0px); }
+    
+   }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Color changing Animation</h1>
+    <div class="color-changing-animation"></div>
+    <br>
+     <div class="multiple-color-changing-animation"></div> 
+    <br>
+    <h1 class="logo">Attire</h1>
+</body>
+</html>

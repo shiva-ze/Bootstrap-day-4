@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>title animation</title>
+     <style>
+.new-collection{
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+}
+
+.new-collection::before{
+    content: "";
+    width: 4px;
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    transform: translateX(-15px);
+}
+</style>
+</head>
+
+
+
+<body>
+
+    <div class="new-collection">New collection</div>
+
+
+    
+</body>
+</html>
